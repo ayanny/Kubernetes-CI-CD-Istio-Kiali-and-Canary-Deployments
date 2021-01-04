@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: octank-invogue
+  namespace: test
+  annotations:
+    alb.ingress.kubernetes.io/target-type: ip
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+      protocol: TCP
+      targetPort: 80
+  selector:
+    app: octank-invogue
