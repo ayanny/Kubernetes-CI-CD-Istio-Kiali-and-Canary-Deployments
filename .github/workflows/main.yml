@@ -50,7 +50,7 @@ jobs:
       env: 
         CLUSTERNAME: my-demo
       run: |
-          aws eks --region us-east-2 update-kubeconfig --name $CLUSTERNAME
+          aws eks --region us-east-1 update-kubeconfig --name $CLUSTERNAME
     - name: Deploy k8s yaml
       id: deploy-k8s-yaml
       env:
