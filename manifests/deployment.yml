@@ -17,7 +17,7 @@ spec:
   template:
     metadata:
       labels:
-        app: octank-invogue
+        app.kubernetes.io/name: octank-invogue 
     spec:
       containers:
       - name: octank-invogue
